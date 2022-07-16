@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Sample Test Suite]" parallel="none">
+  <parameter name="browserName" value="chrome"/>
+  <listeners>
+    <listener class-name="utils.SuiteListener"/>
+  </listeners>
+  <test name="Test Automation">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="corePackage.SampleTest"/>
+    </classes>
+  </test> <!-- Test Automation -->
+  <test name="Test Automation(failed)" parallel="none">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="corePackage.SampleTest">
+        <methods>
+          <include name="aftertMethodMethod"/>
+          <include name="afterTestMethod"/>
+          <include name="sampleMethodForEmailEntering"/>
+          <include name="beforeTestMethod"/>
+          <include name="beforeMethodMethod"/>
+        </methods>
+      </class> <!-- corePackage.SampleTest -->
+    </classes>
+  </test> <!-- Test Automation(failed) -->
+</suite> <!-- Failed suite [Sample Test Suite] -->
