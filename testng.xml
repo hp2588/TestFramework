@@ -5,7 +5,7 @@
 	<listener class-name="utils.SuiteListener"/>
 </listeners>
   <test name="Test Automation">
-  	<parameter name="browserName" value = "chrome"/>
+  	<parameter name="browserName" value = "safari"/>
   	<classes>
   		<class name = "corePackage.SampleTest"/>
   	</classes>
